@@ -16,9 +16,13 @@ The summary can contain but is not limited to:
 
 Any code that you borrow or other reference should be properly cited.
 
+## Task
+Image Classification
 
 ## Datasets
-ImageNet, CIFAR-10, CIFAR-100?
+1. CIFAR-10, 
+2. CIFAR-100,
+3. ImageNet
 
 ## Base Model
 ConvNets?
