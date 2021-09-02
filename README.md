@@ -25,3 +25,6 @@ ConvNets?
 5 layers?
 
 Test - Marlan
+
+### Colab Link
+https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sharing
