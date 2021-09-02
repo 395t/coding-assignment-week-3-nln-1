@@ -15,3 +15,11 @@ The summary can contain but is not limited to:
 ## Reference
 
 Any code that you borrow or other reference should be properly cited.
+
+
+## Datasets
+ImageNet, CIFAR-10, CIFAR-100?
+
+## Base Model
+ConvNets?
+5 layers?
