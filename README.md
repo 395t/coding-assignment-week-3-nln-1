@@ -32,3 +32,13 @@ Test - Marlan
 
 ### Colab Link
 https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sharing
+
+### Results
+
+|   | CIFAR-10 |   |   |
+|---|---|---|---|
+| Sigmoid  |   |   |   |
+|  Tanh |   |   |   |
+|  ReLU |   |   |   |
+|  LeakyReLU |   |   |   |
+|  Maxout |   |   |   |
