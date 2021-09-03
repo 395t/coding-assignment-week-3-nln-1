@@ -35,6 +35,7 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 
 ### Results
 
+#### Activation
 |   | CIFAR-10 |   |   |
 |---|---|---|---|
 | Sigmoid  |   |   |   |
@@ -42,3 +43,10 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 |  ReLU |   |   |   |
 |  LeakyReLU |   |   |   |
 |  Maxout |   |   |   |
+
+#### Initialization
+|   | CIFAR-10  |   |   |
+|---|---|---|---|
+| random  |   |   |   |
+|  normal |   |   |   |
+|  pretraining |   |   |   |
