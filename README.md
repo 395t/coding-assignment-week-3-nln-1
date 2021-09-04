@@ -40,8 +40,8 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 |---|---|---|---|
 | Sigmoid  |   |   |   |
 |  Tanh |   |   |   |
-|  ReLU | `64.06`  |   |   |
-|  LeakyReLU | `65.22`  |   |   |
+|  ReLU | 64.06 |   |   |
+|  LeakyReLU | 65.22 |   |   |
 |  Maxout |   |   |   |
 
 #### Initialization
