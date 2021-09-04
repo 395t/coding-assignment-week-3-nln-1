@@ -36,7 +36,7 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 ### Results
 
 #### Activation
-|   | CIFAR-10 |   |   |
+|   | CIFAR-10 | CIFAR-100 | ImageNet |
 |---|---|---|---|
 | Sigmoid  |   |   |   |
 |  Tanh |   |   |   |
@@ -45,7 +45,7 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 |  Maxout |   |   |   |
 
 #### Initialization
-|   | CIFAR-10  |   |   |
+|   | CIFAR-10 | CIFAR-100 | ImageNet |
 |---|---|---|---|
 | random  |   |   |   |
 |  normal |   |   |   |
