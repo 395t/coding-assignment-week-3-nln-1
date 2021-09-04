@@ -15,6 +15,7 @@ The summary can contain but is not limited to:
 ## Reference
 
 Any code that you borrow or other reference should be properly cited.
+
 https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
 
 ## Task
