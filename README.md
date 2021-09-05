@@ -40,7 +40,7 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 #### Activation
 
 ##### Test Accuracy
-|   | CIFAR-10 | Tiny-ImageNet | . |
+|   | CIFAR-10 | Tiny-ImageNet | CalTech 101 |
 |---|---|---|---|
 |  ReLU | 63.45 |   |   |
 |  LeakyReLU | 64.45 |   |   |
@@ -51,7 +51,7 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 
 
 ##### Test Loss
-|   | CIFAR-10 | Tiny-ImageNet | . |
+|   | CIFAR-10 | Tiny-ImageNet | CalTech 101 |
 |---|---|---|---|
 |  ReLU | 1.08 |   |   |
 |  LeakyReLU | 1.07 |   |   |
