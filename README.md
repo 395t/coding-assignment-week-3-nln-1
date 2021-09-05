@@ -62,9 +62,10 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 |  Softplus | 1.25 |   |   |
 
 #### Initialization
-|   | CIFAR-10 | Tiny-ImageNet | . |
-|---|---|---|---|
-| random (default) |   |   |   |
-|  normalized |   |   |   |
-|  orthoginal |   |   |   |
-|  xavier |   |   |   |
+CIFAR-10
+|   | ReLU | Leaky ReLu | tanh | softplus | softsign |
+|---|---|---|---|---|---|
+| random (default) |   |   |   |  |  |
+|  normalized |   |   |   |   |   |
+|  orthoginal |   |   |   |   |   |
+|  xavier | 59.46  | 61.53  | 55.77  | 57.65  | 63.05  |
