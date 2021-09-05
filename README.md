@@ -97,7 +97,7 @@ Caltech101 Accuracy
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) |   |   |   |  |  |
-|  normalized |   |   |   |   |   |
+|  normalized | 24.88  | 30.95  | 27.19  | 8.99  | 39.25  |
 |  orthogonal | 41.55  | 42.86  | 52.30  | 39.09  | 51.69  |
 |  xavier |   |   |   |   |   |
 
@@ -105,7 +105,7 @@ Caltech101 Test Loss
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) |   |   |   |  |  |
-|  normalized |   |   |   |   |   |
+|  normalized | 3.48  | 3.24  | 3.59  | 4.21  | 2.80  |
 |  orthogonal | 2.57  | 2.60  | 2.13  | 2.68  | 2.07 |
 |  xavier |   |   |   |   |   |
 
