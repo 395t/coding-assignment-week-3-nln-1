@@ -24,7 +24,7 @@ Image Classification
 ## Datasets
 1. CIFAR-10, 
 2. Tiny-ImageNet
-3. .
+3. CalTech 101
 
 ## Base Model
 ConvNets?
