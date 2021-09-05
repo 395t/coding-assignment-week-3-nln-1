@@ -46,7 +46,7 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 |  Tanh | 65.32  |   |  53.15 |
 |  Maxout | 62.83 | 10.86 | 50.77  |
 |  Softplus | 59.28  |   | 38.79  |
-|  Softsign | 65.39  |   | 49.08  |
+|  Softsign | 65.39  | 13.66  | 49.08  |
 
 
 ##### Test Loss
@@ -54,7 +54,7 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 |---|---|---|---|
 |  ReLU | 1.08 |  4.11 |  2.40 |
 |  LeakyReLU | 1.07 | 4.35  | 2.50  |
-|  Tanh |   |   |  2.17 |
+|  Tanh |   | 1.12  |  2.17 |
 |  Maxout | 1.10 | 4.25 | 2.12  |
 |  Softplus | 1.18 |   |  2.74 |
 |  Softsign |   |   | 2.23  |
