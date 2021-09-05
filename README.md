@@ -97,16 +97,16 @@ Caltech101 Accuracy
 |---|---|---|---|---|---|
 | random (default) |   |   |   |  |  |
 |  normalized |   |   |   |   |   |
-|  orthogonal |   |   |   |   |   |
+|  orthogonal | 41.55  | 42.86  | 52.30  | 39.09  | 51.69  |
 |  xavier |   |   |   |   |   |
 
 Caltech101 Test Loss
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
-| random (default) | 1.08  | 1.07  |   | 1.25 |  |
+| random (default) |   |   |   |  |  |
 |  normalized |   |   |   |   |   |
-|  orthogonal | 1.16  | 1.15  | 1.29  | 1.21  | 1.11  |
-|  xavier | 1.18  | 1.11  | 1.29  | 1.24  | 1.07  |
+|  orthogonal | 2.57  | 2.60  | 2.13  | 2.68  | 2.07 |
+|  xavier |   |   |   |   |   |
 
 #### Stability of Model to Hyperparams (learning rate)
 |   | 0.1 | 0.01 | 0.001 | 0.0001 |
