@@ -43,7 +43,7 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 |---|---|---|---|
 |  ReLU | 63.45 | 12.15  |  46.62 |
 |  LeakyReLU | 64.45 |  9.87 |  44.24 |
-|  Tanh | 65.32  |   |  53.15 |
+|  Tanh | 65.32  | 11.21  |  53.15 |
 |  Maxout | 62.83 | 10.86 | 50.77  |
 |  Softplus | 59.28  |   | 38.79  |
 |  Softsign | 65.39  | 13.66  | 49.08  |
@@ -54,7 +54,7 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 |---|---|---|---|
 |  ReLU | 1.08 |  4.11 |  2.40 |
 |  LeakyReLU | 1.07 | 4.35  | 2.50  |
-|  Tanh |   |   |  2.17 |
+|  Tanh |   |  4,28 |  2.17 |
 |  Maxout | 1.10 | 4.25 | 2.12  |
 |  Softplus | 1.18 |   |  2.74 |
 |  Softsign |   | 4.48  | 2.23  |
@@ -86,7 +86,7 @@ CIFAR-10 Test Loss
 Tiny Imagenet Accuracy
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
-| random (default) | 12.15  | 9.87  |   |  |  |
+| random (default) | 12.15  | 9.87  | 11.21  |  |  |
 |  normalized |   |   |   |   |   |
 |  orthogonal | 10.66  | 10.95  | 10.97  | 0.56  | 15.56  |
 |  xavier |   |   |   |   |   |
@@ -94,7 +94,7 @@ Tiny Imagenet Accuracy
 Tiny Imagenet Test Loss
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
-| random (default) | 4.11  | 4.35  |   |  |  |
+| random (default) | 4.11  | 4.35  | 4.28  |  |  |
 |  normalized |   |   |   |   |   |
 |  orthogonal | 4.20  | 4.15  | 4.37  | 5.30  | 3.97  |
 |  xavier |   |   |   |   |   |
