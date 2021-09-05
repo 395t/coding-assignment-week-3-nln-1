@@ -42,30 +42,30 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 ##### Test Accuracy
 |   | CIFAR-10 | Tiny-ImageNet | . |
 |---|---|---|---|
-| Sigmoid  |   |   |   |
-|  Tanh | 65.32  |   |   |
 |  ReLU | 63.45 |   |   |
 |  LeakyReLU | 64.45 |   |   |
+|  Tanh | 65.32  |   |   |
 |  Maxout |   |   |   |
-|  Softsign | 65.39  |   |   |
 |  Softplus | 56.56  |   |   |
+|  Softsign | 65.39  |   |   |
+
 
 ##### Test Loss
 |   | CIFAR-10 | Tiny-ImageNet | . |
 |---|---|---|---|
-| Sigmoid  |   |   |   |
-|  Tanh |   |   |   |
 |  ReLU | 1.08 |   |   |
 |  LeakyReLU | 1.07 |   |   |
+|  Tanh |   |   |   |
 |  Maxout |   |   |   |
-|  Softsign |   |   |   |
 |  Softplus | 1.25 |   |   |
+|  Softsign |   |   |   |
+
 
 #### Initialization
 CIFAR-10 Accuracy
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
-| random (default) |   |   |   |  |  |
+| random (default) | 63.45  | 64.45  | 65.32  | 56.56 | 65.39 |
 |  normalized |   |   |   |   |   |
 |  orthoginal |   |   |   |   |   |
 |  xavier | 59.46  | 61.53  | 55.77  | 57.65  | 63.05  |
@@ -73,7 +73,7 @@ CIFAR-10 Accuracy
 CIFAR-10 Test Loss
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
-| random (default) |   |   |   |  |  |
+| random (default) | 1.08  | 1.07  |   | 1.25 |  |
 |  normalized |   |   |   |   |   |
 |  orthoginal |   |   |   |   |   |
 |  xavier | 1.18  | 1.11  | 1.29  | 1.24  | 1.07  |
