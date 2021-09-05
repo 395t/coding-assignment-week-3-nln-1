@@ -38,6 +38,15 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 ### Activation
 
 
+
+![Cifar10_default_training_loss](https://user-images.githubusercontent.com/13873880/132144385-04009348-e681-455c-b70d-b748b5a219c2.png)
+![Cifar10_default_validation_loss](https://user-images.githubusercontent.com/13873880/132144478-d92bac1b-37ff-4db5-a4b2-b06ae9ddf720.png)
+
+
+![Caltech_default_training_loss](https://user-images.githubusercontent.com/13873880/132142942-f9faa9ec-15aa-492c-8e76-cb11cbefc479.png)
+![Caltech_default_validation_loss](https://user-images.githubusercontent.com/13873880/132142943-1b1ec9a6-965e-4441-b097-343bf766e4b5.png)
+
+
 ##### Test Accuracy
 |   | CIFAR-10 | Tiny-ImageNet | CalTech 101 |
 |---|---|---|---|
@@ -59,9 +68,6 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 |  Softplus | 1.18 | 5.30  |  2.74 |
 |  Softsign |   | 4.48  | 2.23  |
 
-
-![Caltech_default_training_loss](https://user-images.githubusercontent.com/13873880/132142942-f9faa9ec-15aa-492c-8e76-cb11cbefc479.png)
-![Caltech_default_validation_loss](https://user-images.githubusercontent.com/13873880/132142943-1b1ec9a6-965e-4441-b097-343bf766e4b5.png)
 
 
 
