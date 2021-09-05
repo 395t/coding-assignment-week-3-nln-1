@@ -60,9 +60,9 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 |  Softsign |   |   | 2.23  |
 
 
-![Caltech_default_training_loss](https://user-images.githubusercontent.com/13873880/132142913-644f81a1-774d-411f-9074-932963fa8b8c.png)
+![Caltech_default_training_loss](https://user-images.githubusercontent.com/13873880/132142942-f9faa9ec-15aa-492c-8e76-cb11cbefc479.png)
+![Caltech_default_validation_loss](https://user-images.githubusercontent.com/13873880/132142943-1b1ec9a6-965e-4441-b097-343bf766e4b5.png)
 
-![Caltech_default_validation_loss](https://user-images.githubusercontent.com/13873880/132142910-c7bf2a9c-704b-425f-832e-a3955adee27a.png)
 
 
 
