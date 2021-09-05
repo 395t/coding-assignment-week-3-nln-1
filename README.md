@@ -41,10 +41,12 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 |   | CIFAR-10 | CIFAR-100 | ImageNet |
 |---|---|---|---|
 | Sigmoid  |   |   |   |
-|  Tanh |   |   |   |
+|  Tanh | 65.32  |   |   |
 |  ReLU | 64.06 |   |   |
 |  LeakyReLU | 65.22 |   |   |
 |  Maxout |   |   |   |
+|  Softsign |   |   |   |
+|  Softplus |   |   |   |
 
 #### Initialization
 |   | CIFAR-10 | CIFAR-100 | ImageNet |
