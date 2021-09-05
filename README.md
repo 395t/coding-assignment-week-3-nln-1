@@ -38,15 +38,28 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 ### Results
 
 #### Activation
+
+##### Test Accuracy
 |   | CIFAR-10 | Tiny-ImageNet | . |
 |---|---|---|---|
 | Sigmoid  |   |   |   |
 |  Tanh | 65.32  |   |   |
-|  ReLU | 64.06 |   |   |
-|  LeakyReLU | 65.22 |   |   |
+|  ReLU | 63.45 |   |   |
+|  LeakyReLU | 64.45 |   |   |
 |  Maxout |   |   |   |
 |  Softsign | 65.39  |   |   |
-|  Softplus |   |   |   |
+|  Softplus | 56.56  |   |   |
+
+##### Test Loss
+|   | CIFAR-10 | Tiny-ImageNet | . |
+|---|---|---|---|
+| Sigmoid  |   |   |   |
+|  Tanh |   |   |   |
+|  ReLU | 1.08 |   |   |
+|  LeakyReLU | 1.07 |   |   |
+|  Maxout |   |   |   |
+|  Softsign |   |   |   |
+|  Softplus | 1.25 |   |   |
 
 #### Initialization
 |   | CIFAR-10 | Tiny-ImageNet | . |
