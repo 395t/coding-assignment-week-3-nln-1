@@ -33,9 +33,9 @@ ConvNets?
 ### Colab Link
 https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sharing
 
-### Results
+## Results
 
-#### Activation
+### Activation
 
 ##### Test Accuracy
 |   | CIFAR-10 | Tiny-ImageNet | CalTech 101 |
@@ -59,7 +59,7 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 |  Softsign |   |   |   |
 
 
-#### Initialization
+### Initialization
 CIFAR-10 Accuracy
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
@@ -108,7 +108,7 @@ Caltech101 Test Loss
 |  orthogonal | 2.57  | 2.60  | 2.13  | 2.68  | 2.07 |
 |  xavier |   |   |   |   |   |
 
-#### Stability of Model to Hyperparams (learning rate)
+### Stability of Model to Hyperparams (learning rate)
 |   | 0.1 | 0.01 | 0.001 | 0.0001 |
 |---|---|---|---|---|
 |  ReLU |  |   | 63.45  |   |
