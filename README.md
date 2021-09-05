@@ -23,8 +23,8 @@ Image Classification
 
 ## Datasets
 1. CIFAR-10, 
-2. CIFAR-100,
-3. ImageNet
+2. Tiny-Imagenet
+3. .
 
 ## Base Model
 ConvNets?
@@ -38,7 +38,7 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 ### Results
 
 #### Activation
-|   | CIFAR-10 | CIFAR-100 | ImageNet |
+|   | CIFAR-10 | Tiny-Imagenet | . |
 |---|---|---|---|
 | Sigmoid  |   |   |   |
 |  Tanh | 65.32  |   |   |
@@ -49,7 +49,7 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 |  Softplus |   |   |   |
 
 #### Initialization
-|   | CIFAR-10 | CIFAR-100 | ImageNet |
+|   | CIFAR-10 | Tiny-Imagenet | . |
 |---|---|---|---|
 | random  |   |   |   |
 |  normal |   |   |   |
