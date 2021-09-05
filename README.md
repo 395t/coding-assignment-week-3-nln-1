@@ -45,7 +45,7 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 |  ReLU | 64.06 |   |   |
 |  LeakyReLU | 65.22 |   |   |
 |  Maxout |   |   |   |
-|  Softsign |   |   |   |
+|  Softsign | 65.39  |   |   |
 |  Softplus |   |   |   |
 
 #### Initialization
