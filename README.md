@@ -62,10 +62,18 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 |  Softplus | 1.25 |   |   |
 
 #### Initialization
-CIFAR-10
+CIFAR-10 Accuracy
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) |   |   |   |  |  |
 |  normalized |   |   |   |   |   |
 |  orthoginal |   |   |   |   |   |
 |  xavier | 59.46  | 61.53  | 55.77  | 57.65  | 63.05  |
+
+CIFAR-10 Test Loss
+|   | ReLU | Leaky ReLu | tanh | softplus | softsign |
+|---|---|---|---|---|---|
+| random (default) |   |   |   |  |  |
+|  normalized |   |   |   |   |   |
+|  orthoginal |   |   |   |   |   |
+|  xavier | 1.18  | 1.11  | 1.29  | 1.24  | 1.07  |
