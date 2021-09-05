@@ -57,7 +57,7 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 |  Tanh |   |   |  2.17 |
 |  Maxout | 1.10 | 4.25 | 2.12  |
 |  Softplus | 1.18 |   |  2.74 |
-|  Softsign |   | 1.12  | 2.23  |
+|  Softsign |   | 4.48  | 2.23  |
 
 
 ![Caltech_default_training_loss](https://user-images.githubusercontent.com/13873880/132142942-f9faa9ec-15aa-492c-8e76-cb11cbefc479.png)
