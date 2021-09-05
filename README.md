@@ -60,6 +60,12 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 |  Softsign |   |   | 2.23  |
 
 
+![Caltech_default_training_loss](https://user-images.githubusercontent.com/13873880/132142913-644f81a1-774d-411f-9074-932963fa8b8c.png)
+
+![Caltech_default_validation_loss](https://user-images.githubusercontent.com/13873880/132142910-c7bf2a9c-704b-425f-832e-a3955adee27a.png)
+
+
+
 ### Initialization
 CIFAR-10 Accuracy
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
