@@ -71,7 +71,7 @@ CIFAR-10 Accuracy
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) | 63.45  | 64.45  | 65.32  | 56.56 | 65.39 |
-|  normalized |   |   |   |   |   |
+|  normalized | 46.49  | 46.35  | 43.82  | 52.32  | 57.50  |
 |  orthogonal | 59.52  | 60.81  | 56.29  | 57.85  | 61.75  |
 |  xavier | 59.46  | 61.53  | 55.77  | 57.65  | 63.05  |
 
@@ -79,7 +79,7 @@ CIFAR-10 Test Loss
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) | 1.08  | 1.07  |   | 1.25 |  |
-|  normalized |   |   |   |   |   |
+|  normalized | 1.46  | 1.47  | 1.64  | 1.33  | 1.22  |
 |  orthogonal | 1.16  | 1.15  | 1.29  | 1.21  | 1.11  |
 |  xavier | 1.18  | 1.11  | 1.29  | 1.24  | 1.07  |
 
@@ -124,4 +124,3 @@ Caltech101 Test Loss
 |  Maxout |  |   | 62.83  |  |
 |  Softplus |  |   | 56.56  |   |
 |  Softsign |   |   |  65.39 |   |
-
