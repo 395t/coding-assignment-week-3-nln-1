@@ -64,6 +64,7 @@ https://colab.research.google.com/drive/1s8Yp01Z0dDjpbCsEVAeC17ATLyQQyfGE?usp=sh
 #### Initialization
 |   | CIFAR-10 | Tiny-ImageNet | . |
 |---|---|---|---|
-| random  |   |   |   |
-|  normal |   |   |   |
-|  pretraining |   |   |   |
+| random (default) |   |   |   |
+|  normalized |   |   |   |
+|  orthoginal |   |   |   |
+|  xavier |   |   |   |
