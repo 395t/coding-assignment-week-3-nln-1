@@ -82,7 +82,7 @@ Tiny Imagenet Accuracy
 |---|---|---|---|---|---|
 | random (default) |   |   |   |  |  |
 |  normalized |   |   |   |   |   |
-|  orthogonal |   |   |   |   |   |
+|  orthogonal | 10.66  | 10.95  | 10.97  | 0.56  | 15.56  |
 |  xavier |   |   |   |   |   |
 
 Tiny Imagenet Test Loss
@@ -90,7 +90,7 @@ Tiny Imagenet Test Loss
 |---|---|---|---|---|---|
 | random (default) |   |   |   |  |  |
 |  normalized |   |   |   |   |   |
-|  orthogonal |   |   |   |   |   |
+|  orthogonal | 4.20  | 4.15  | 4.37  | 5.30  | 3.97  |
 |  xavier |   |   |   |   |   |
 
 Caltech101 Accuracy
