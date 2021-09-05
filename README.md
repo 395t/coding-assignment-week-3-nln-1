@@ -77,3 +77,13 @@ CIFAR-10 Test Loss
 |  normalized |   |   |   |   |   |
 |  orthoginal |   |   |   |   |   |
 |  xavier | 1.18  | 1.11  | 1.29  | 1.24  | 1.07  |
+
+#### Stability of Model to Hyperparams (learning rate)
+|   | 0.1 | 0.01 | 0.001 | 0.0001 |
+|---|---|---|---|---|
+|  ReLU |  |   | 63.45  |   |
+|  LeakyReLU |  |   | 64.45 |   |
+|  Tanh |   |   |  65.32 |  |
+|  Maxout |  |   | 62.83  |  |
+|  Softplus |  |   | 56.56  |   |
+|  Softsign |   |   |  65.39 |   |
