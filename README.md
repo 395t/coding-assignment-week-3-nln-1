@@ -45,7 +45,7 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 |  ReLU | 63.45 |   |   |
 |  LeakyReLU | 64.45 |   |   |
 |  Tanh | 65.32  |   |   |
-|  Maxout | 62.83 |   |   |
+|  Maxout | 62.83 | 10.86 |   |
 |  Softplus | 56.56  |   |   |
 |  Softsign | 65.39  |   |   |
 
@@ -56,7 +56,7 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 |  ReLU | 1.08 |   |   |
 |  LeakyReLU | 1.07 |   |   |
 |  Tanh |   |   |   |
-|  Maxout | 1.10 |   |   |
+|  Maxout | 1.10 | 4.25 |   |
 |  Softplus | 1.25 |   |   |
 |  Softsign |   |   |   |
 
