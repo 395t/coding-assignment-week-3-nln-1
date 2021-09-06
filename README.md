@@ -29,13 +29,13 @@ This dataset consists of 60000 colour images of size 3x32x32 that are uniformly 
 
 #### Tiny-Imagenet
 This is a subset of the ImageNet dataset and contains 100000 colour images of 200 classes (500 per class) that are downsized to 64x64 from 256x256. The images are divided into the train, validate and test sets as 350/75/75 for each class. The dataset was introduced in
-- Le, Ya, and Xuan Yang. "Tiny imagenet visual recognition challenge." CS 231N 7.7 (2015): 3.
+- Le, Ya, and Xuan Yang. "[Tiny imagenet visual recognition challenge.](http://cs231n.stanford.edu/reports/2015/pdfs/yle_project.pdf)" CS 231N 7.7 (2015): 3.
 
 #### Caltech101
 This dataset consists of colour images of objects belonging to 101 classes. The images are unevenly distributed with 40 to 800 images corresponding to each class. Though, most classes have exactly 50 images. The total number of images are 8680 which are divided into train, validate and split sets in the ratio 0.7:0.15:0.15, stratified on the class label. 
 
 The size of the images also vary a lot around 300x200 pixels. We center crop the pictures (and introduce padding wherever necessary) to make them 256x256 before downsampling them to 64x64 for feasibility of training. The dataset was made available by
-- Fei-Fei, Li, Rob Fergus, and Pietro Perona. "One-shot learning of object categories." IEEE transactions on pattern analysis and machine intelligence 28.4 (2006): 594-611.
+- Fei-Fei, Li, Rob Fergus, and Pietro Perona. "[One-shot learning of object categories.](http://vision.stanford.edu/documents/Fei-FeiFergusPerona2006.pdf)" IEEE transactions on pattern analysis and machine intelligence 28.4 (2006): 594-611.
 
 
 ### Colab Link
