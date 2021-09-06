@@ -20,7 +20,7 @@ Our Conv Net model is designed for image classification.
 ## Model Architecture
 We implement a simple convolutional network for our image classification tasks consisting of two convolutional feature extracting blocks followed by two fully connected classification layers and an output layer. Each convolutional block is made up of two convolutional layers and a maxpooling layer. The non-linearities specified in each experiment are applied after each of the four convolutional layers as well as after the two fully connected layers. 
 
-We have two varitations of our network one to handle input images of size 32x32 defined in the Net() class and one that handles input images of size 64x64 defined in the Net64() class. 
+We have two varitations of our network, one to handle input images of size 32x32 defined in the Net() class and one that handles input images of size 64x64 defined in the Net64() class. 
 
 
 ## Datasets
