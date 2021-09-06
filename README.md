@@ -2,15 +2,23 @@
 
 ## Summary
 
-The summary can contain but is not limited to:
+### Code Structure
+All of the code to reproduce our experiments can be found in `Nonlinear_Activation_and_Initalizations.ipynb`. This includes code to load any of the three datasets used in our experiments, network creation, and training functions and visualizations.
 
-- Code structure.
+### Commands to Reproduce Experiments
+To run locally, create a virtual environment and install the libraries in requirements.txt using the following commands. Alternately, you can use Google Colab to directly run the code.
+```
+python3 -m venv my_venv
+source my_venv/bin/activate
+pip3 install -r requirements
+pip3 install jupyter notebook
+```
 
-- Commands to reproduce your experiments.
+To run an experiment, edit the hyperparameters cell in the notebook to select desired experimental settings then simply run all cells in the notebook.
 
-- Write-up of your findings and conclusions.
 
-- Ipython notebooks can be organized in `notebooks`.
+### Discussion of Results - Findings and conclusions
+
 
 
 ## Task
