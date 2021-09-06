@@ -142,11 +142,9 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 
 
 
+![training_loss (lr=0.1](https://user-images.githubusercontent.com/35536646/132161475-5aac29fa-d0db-42b5-b357-796a94ca1893.png) ![training_loss (lr=0.01](https://user-images.githubusercontent.com/35536646/132161480-ca70ad5c-2542-45b5-bba3-536a4f1c8a01.png)
+![training_loss (lr=0.001](https://user-images.githubusercontent.com/35536646/132161481-adebe842-5700-4c25-9e80-045f7612ae7a.png) ![training_loss (lr=0.0001](https://user-images.githubusercontent.com/35536646/132161483-cf4e23ca-850d-4c5f-b839-361291cdc211.png)
 
-
-![training_loss (lr=0.1](https://user-images.githubusercontent.com/35536646/132160913-7c3e8118-40ca-4a54-9fdd-de89cc605668.png) ![training_loss (lr=0.01)](https://user-images.githubusercontent.com/35536646/132161109-1711787d-8284-4e9e-97c4-d99364ca3073.png)
-
-(![training_loss (lr=0.001)](https://user-images.githubusercontent.com/35536646/132160893-9bf8e2da-f84a-4f50-ab05-ce1223b26790.png) ![training_loss (lr=0.0001)](https://user-images.githubusercontent.com/35536646/132161185-a5d205b2-8c79-479b-8206-93438fb47b83.png)
 
 Softplus is the most stable across different learning rate, with loss contained in a reasonable range with all four rates.
 ![softplus_across_lr](https://user-images.githubusercontent.com/35536646/132151475-bf6a0ae7-29ee-4cdc-8b51-e8905d2cbaa7.png)
