@@ -2,15 +2,23 @@
 
 ## Summary
 
-The summary can contain but is not limited to:
+### Code Structure
+All of the code to reproduce our experiments can be found in `Nonlinear_Activation_and_Initalizations.ipynb`. This includes code to load any of the three datasets used in our experiments, network creation, training function and visualization of test results.
 
-- Code structure.
+### Commands to Reproduce Experiments
+To run locally, create a virtual environment and install the libraries in requirements.txt using the following commands. Alternately, you can use Google Colab to directly run the code.
+```
+python3 -m venv my_venv
+source my_venv/bin/activate
+pip3 install -r requirements
+pip3 install jupyter notebook
+```
 
-- Commands to reproduce your experiments.
+To run an experiment, edit the hyperparameters cell in the notebook to select desired experimental settings then simply run all cells in the notebook.
 
-- Write-up of your findings and conclusions.
 
-- Ipython notebooks can be organized in `notebooks`.
+### Discussion of Results - Findings and conclusions
+
 
 
 ## Task
@@ -180,10 +188,10 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 ##### Training Loss Across Activation with Different Learning Rate
 (If you cannot find the training curve on the plot, meaning the loss for that specific activation is too high and cannot fit in the plot.)
 
-![training_loss (lr=0.1)](https://user-images.githubusercontent.com/35536646/132151120-dee06127-c3b2-4973-a9ac-e48dabfe0be2.png)
-![training_loss (lr=0.01)](https://user-images.githubusercontent.com/35536646/132151126-b8ea9329-ad8a-4888-b9c7-b02b58a912ca.png)
-(![training_loss (lr=0.001)](https://user-images.githubusercontent.com/35536646/132151065-e3ea761e-d52b-4501-96df-7a67e43344bd.png)
-![training_loss (lr=0.0001)](https://user-images.githubusercontent.com/35536646/132151112-ee045176-410c-4462-af24-4620b5d9bf12.png)
+![training_loss (lr=0.1)](https://user-images.githubusercontent.com/35536646/132151120-dee06127-c3b2-4973-a9ac-e48dabfe0be2.png) ![training_loss (lr=0.01)](https://user-images.githubusercontent.com/35536646/132151126-b8ea9329-ad8a-4888-b9c7-b02b58a912ca.png)
+
+(![training_loss (lr=0.001)](https://user-images.githubusercontent.com/35536646/132151065-e3ea761e-d52b-4501-96df-7a67e43344bd.png) ![training_loss (lr=0.0001)](https://user-images.githubusercontent.com/35536646/132151112-ee045176-410c-4462-af24-4620b5d9bf12.png)
+
 
 Softplus is the most stable across different learning rate, with loss contained in a reasonable range with all four rates.
 ![softplus_across_lr](https://user-images.githubusercontent.com/35536646/132151475-bf6a0ae7-29ee-4cdc-8b51-e8905d2cbaa7.png)
