@@ -185,8 +185,11 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 (![training_loss (lr=0.001)](https://user-images.githubusercontent.com/35536646/132151065-e3ea761e-d52b-4501-96df-7a67e43344bd.png)
 ![training_loss (lr=0.0001)](https://user-images.githubusercontent.com/35536646/132151112-ee045176-410c-4462-af24-4620b5d9bf12.png)
 
-Softplus is probably the most stable across different learning rate, with loss contained in a reasonable range with all four rates.
+Softplus is the most stable across different learning rate, with loss contained in a reasonable range with all four rates.
 ![softplus_across_lr](https://user-images.githubusercontent.com/35536646/132151475-bf6a0ae7-29ee-4cdc-8b51-e8905d2cbaa7.png)
+
+Maxout is the most unstable if appied larger learning rate(0.1, 0.01); both learning rates yield `nan` on training loss.
+
 
 ### Maxout Without Dropout and With Varying Number of Units!
 
