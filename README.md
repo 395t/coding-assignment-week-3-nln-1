@@ -18,7 +18,7 @@ pip3 install jupyter notebook
 To run an experiment, edit the hyperparameters cell in the notebook to select desired experimental settings then simply run all cells in the notebook.
 
 
-### Discussion of Results - Findings and conclusions
+### Discussion of Results - Findings and Conclusions
 
 We train the model for 10-15 epochs depending on the convergence. The loss on the validation set is used for model selection. The convergence plots show that most activations cause the model to converge 10 epochs while some activations like softplus converge between 10 to 15 epochs.
 
