@@ -91,10 +91,10 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 |---|---|---|---|
 |  ReLU | 63.45 | 12.15  |  46.62 |
 |  LeakyReLU | 64.45 |  9.87 |  44.24 |
-|  Tanh | 65.32  | 12.53  |  53.15 |
+|  Tanh | **65.32**  | 12.53  |  **53.15** |
 |  Maxout | 62.83 | 10.86 | 50.77  |
 |  Softplus | 59.28  | 0.43  | 38.79  |
-|  Softsign | 65.39  | 13.66  | 49.08  |
+|  Softsign | **65.39**  | **13.66**  | 49.08  |
 
 
 
@@ -105,7 +105,7 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 ##### Test Accuracy on CIFAR-10
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
-| random (default) | 63.45  | 64.45  | 65.32  | 56.56 | 65.39 |
+| random (default) | 63.45  | 64.45  | **65.32**  | 56.56 | **65.39** |
 |  normalized | 46.49  | 46.35  | 43.82  | 52.32  | 57.50  |
 |  orthogonal | 59.52  | 60.81  | 56.29  | 57.85  | 61.75  |
 |  xavier | 59.46  | 61.53  | 55.77  | 57.65  | 63.05  |
@@ -118,7 +118,7 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 | random (default) | 46.62  | 44.24  | 53.15  | 38.79  | 49.08  |
 |  normalized | 24.88  | 30.95  | 27.19  | 8.99  | 39.25  |
 |  orthogonal | 41.55  | 42.86  | 52.30  | 39.09  | 51.69  |
-|  xavier |  42.17 |  42.86 | 53.99  | 41.24  | 55.38  |
+|  xavier |  42.17 |  42.86 | 53.99  | 41.24  | **55.38**  |
 
 
 
@@ -129,10 +129,10 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 |---|---|---|---|---|
 |  ReLU | 10.00 | 23.53  | 63.45  | 52.28  |
 |  LeakyReLU | 10.00 |  34.82 | 64.45 | 52.61  |
-|  Tanh | 19.40  | 24.90  |  65.32 | 60.84 |
+|  Tanh | 19.40  | 24.90  |  **65.32** | 60.84 |
 |  Maxout | 10.00 | 10.00  | 62.83  | 62.33 |
 |  Softplus | 10.00 | 58.71  | 56.56  | 10.00  |
-|  Softsign | 21.14  | 47.15  |  65.39 | 51.01  |
+|  Softsign | 21.14  | 47.15  |  **65.39** | 51.01  |
 
 
 
