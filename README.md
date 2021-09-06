@@ -45,15 +45,16 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 
 ## Results
 
-We compare 5 non-linear activation functions in our model on image classification task - 
+We compare 6 non-linear activation functions in our model on image classification task - 
 
 - ReLU [(Deep Sparse Rectifier Neural Networks, Glorot, Bordes, Bengio; 2011)](https://proceedings.mlr.press/v15/glorot11a/glorot11a.pdf)
 - LeakyReLU [(Rectifier Nonlinearities Improve Neural Network Acoustic Models, Maas, Hannun, Ng; 2013)](https://ai.stanford.edu/~amaas/papers/relu_hybrid_icml2013_final.pdf)
 - Tanh [(Deep Sparse Rectifier Neural Networks, Glorot, Bordes, Bengio; 2011)](https://proceedings.mlr.press/v15/glorot11a/glorot11a.pdf)
 - Maxout [(Maxout Networks, Goodfellow, Warde-Farley, Mirza, Courville, Bengio; 2013)](https://arxiv.org/abs/1302.4389)
 - Softsign [(Understanding the difficulty of training deep feedforward neural networks, Glorot, Bengio; 2010)](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)
+- Softplus [(Deep Sparse Rectifier Neural Networks, Glorot, Bordes, Bengio; 2011)](https://proceedings.mlr.press/v15/glorot11a/glorot11a.pdf)
 
-We also evaluate the performance of our model with different initialization strategies. We compare the 5 activations above with the following model initializations (on all 3 datasets):
+We also evaluate the performance of our model with different initialization strategies. We compare the 6 activations above with the following model initializations (on all 3 datasets):
 
 - Random (default)
 - Normalized [(Exact solutions to the nonlinear dynamics of learning in deep linear neural networks, Saxe, McClelland, Ganguli; 2013)](https://arxiv.org/abs/1312.6120)
