@@ -178,6 +178,14 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 |  Softplus  | 2.35  | 1.18  |  1.18 | 2.31  |
 |  Softsign  | 76.15 | 1.48  | 0.98  | 1.36  |
 
+##### Training Loss Across Activation with Different Learning Rate
+![training_loss (lr=0.1)](https://user-images.githubusercontent.com/13873880/132147956-1c3a35bb-c540-4023-8f02-39804eaac730.png)
+![training_loss (lr=0.01)](https://user-images.githubusercontent.com/13873880/132147961-c118aaed-72d2-4516-8ba1-15c7a3f09e21.png)
+
+
+![training_loss (lr=0.001)](https://user-images.githubusercontent.com/13873880/132142942-f9faa9ec-15aa-492c-8e76-cb11cbefc479.png)
+![training_loss (lr=0.0001)](https://user-images.githubusercontent.com/13873880/132142943-1b1ec9a6-965e-4441-b097-343bf766e4b5.png)
+
 ### Maxout Without Dropout and With Varying Number of Units!
 
 ![Maxout_Training](https://user-images.githubusercontent.com/34489261/132150030-27f69f4e-9c18-427f-a334-a2fab2b15b7f.png)
