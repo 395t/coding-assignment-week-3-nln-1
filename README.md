@@ -70,8 +70,8 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 
 
 
-![Cifar10_default_training_loss](https://user-images.githubusercontent.com/13873880/132147956-1c3a35bb-c540-4023-8f02-39804eaac730.png)
-![Cifar10_default_validation_loss](https://user-images.githubusercontent.com/13873880/132147961-c118aaed-72d2-4516-8ba1-15c7a3f09e21.png)
+![Cifar10_default_training_loss](https://user-images.githubusercontent.com/13873880/132147956-1c3a35bb-c540-4023-8f02-39804eaac730.png=300x300)
+![Cifar10_default_validation_loss](https://user-images.githubusercontent.com/13873880/132147961-c118aaed-72d2-4516-8ba1-15c7a3f09e21.png=300x300)
 
 
 
