@@ -121,7 +121,7 @@ We train the model for 10-15 epochs depending on the convergence. The loss on th
 
 ### Stability of Model to Hyperparameters (Learning Rate)
 - **Testing Accuracy**
-  - As in the above table, softsign activation is clearly the most robust to varying learning rates. Maxout and softplus activations are the least robust, both getting results equivalent to random on two of the learning rates. However, maxout is actually pretty good when the learning rate is smaller, and softplus achieves the best accuracy (across activations) on 0.01 learning rate. ReLU, LeakyReLU and Tanh display medium robustness to different learning rates.
+  - As in the table below, softsign activation is clearly the most robust to varying learning rates. Maxout and softplus activations are the least robust, both getting results equivalent to random on two of the learning rates. However, maxout is actually pretty good when the learning rate is smaller, and softplus achieves the best accuracy (across activations) on 0.01 learning rate. ReLU, LeakyReLU and Tanh display medium robustness to different learning rates.
 
 
 
@@ -141,7 +141,8 @@ We train the model for 10-15 epochs depending on the convergence. The loss on th
 
 
 
-##### Training Loss Across Activation with Different Learning Rate
+- Training Loss Across Activation with Different Learning Rate
+  - Generally, models that perform better lead to better convergence and thus lower training loss. Softplus is the only exception here; it seems to be the most robust to learning rates only looking at the training curve, but it actually struggles in terms of testing accuracy. We think it might be stuck at a local minima so that the loss is relatively low but it is actually not learning anything. Other than that,  we observe similar trends as in the testing accuracy, with softsign and tanh being the most robust. Another thing worth noting is that models using maxout converge really fast when the learning rate is smaller (0.001 and 0.0001). It could be the flexibility of this activation so that it can quickly capture the input feature distribution. 
 (If you cannot find the training curve on the plot, meaning the loss for that specific activation is too high and cannot fit in the plot.)
 
 
@@ -160,6 +161,10 @@ Softplus is the most stable across different learning rate, with loss contained 
 
 
 ### Maxout Without Dropout and With Varying Number of Units
+
+It is designed to work well with dropout, but seems to perform just fine without it
+adding more units to max over seemed like it could improve performance, but the results say simpler is better
+
 
 ![Figure 1](https://user-images.githubusercontent.com/34489261/132160348-37134082-e969-40fb-975d-ec2a5f630db6.png) ![Figure 2](https://user-images.githubusercontent.com/34489261/132160352-b6595fc4-a542-4730-aa10-38d8b37dea18.png)
 
