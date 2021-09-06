@@ -45,13 +45,22 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 
 We compare 5 non-linear activation functions in our model on image classification task - 
 
-- ReLU [(	Deep Sparse Rectifier Neural Networks, Glorot, Bordes, Bengio; 2011)](https://proceedings.mlr.press/v15/glorot11a/glorot11a.pdf)
-- LeakyReLU
-- Tanh
-- Maxout [(	Maxout Networks, Goodfellow, Warde-Farley, Mirza, Courville, Bengio; 2013)](https://arxiv.org/abs/1302.4389)
-- Softsign
+- ReLU [(Deep Sparse Rectifier Neural Networks, Glorot, Bordes, Bengio; 2011)](https://proceedings.mlr.press/v15/glorot11a/glorot11a.pdf)
+- LeakyReLU [(Rectifier Nonlinearities Improve Neural Network Acoustic Models, Maas, Hannun, Ng; 2013)](https://ai.stanford.edu/~amaas/papers/relu_hybrid_icml2013_final.pdf)
+- Tanh [(Deep Sparse Rectifier Neural Networks, Glorot, Bordes, Bengio; 2011)](https://proceedings.mlr.press/v15/glorot11a/glorot11a.pdf)
+- Maxout [(Maxout Networks, Goodfellow, Warde-Farley, Mirza, Courville, Bengio; 2013)](https://arxiv.org/abs/1302.4389)
+- Softsign [(Understanding the difficulty of training deep feedforward neural networks, Glorot, Bengio; 2010)](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)
 
-We 
+We also evaluate the performance of our model with different initialization strategies. We compare the 5 activations above with the following model initializations (on all 3 datasets):
+
+- Random (default)
+- Normalized [(Exact solutions to the nonlinear dynamics of learning in deep linear neural networks, Saxe, McClelland, Ganguli; 2013)](https://arxiv.org/abs/1312.6120)
+- Orthogonal [(Exact solutions to the nonlinear dynamics of learning in deep linear neural networks, Saxe, McClelland, Ganguli; 2013)](https://arxiv.org/abs/1312.6120)
+- Xavier [(Understanding the difficulty of training deep feedforward neural networks, Glorot, Bengio; 2010)](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)
+
+Finally, we also test the stability of our model to varying learning rate. We measure model performance with 4 values of learning rate - 0.1, 0.01, 0.0001, 0.00001.
+
+We use 2 metrics of evaluation for comparing the model performance in any experimenyt - Test Accuracy and Test Loss.
 
 ### Variation with Activation Function 
 
@@ -140,7 +149,11 @@ We
 |  orthogonal | 2.57  | 2.60  | 2.13  | 2.68  | 2.07 |
 |  xavier | 2.56  |  2.56 | 2.06  | 2.72  | 1.95  |
 
-### Stability of Model to Hyperparams (learning rate)
+
+
+### Stability of Model to Hyperparameters (Learning Rate)
+
+##### Test Accuracy on CIFAR-10
 |   | 0.1 | 0.01 | 0.001 | 0.0001 |
 |---|---|---|---|---|
 |  ReLU |  |   | 63.45  |   |
