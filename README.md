@@ -154,7 +154,8 @@ Maxout is the most unstable if appied larger learning rate(0.1, 0.01); both lear
 
 ### Maxout Without Dropout and With Varying Number of Units
 
-![Figure_1_60](https://user-images.githubusercontent.com/34489261/132155584-b5d786a8-bc22-4c96-bfa3-9ea283f2896e.png) ![Figure_2_60](https://user-images.githubusercontent.com/34489261/132155591-227e80ee-e1a9-4561-8091-ed3195ce1583.png)
+![Figure 1](https://user-images.githubusercontent.com/34489261/132160006-ec602480-9832-411f-9099-736901d2840b.png) ![Figure 2](https://user-images.githubusercontent.com/34489261/132160010-c1a9462a-c3f2-4e9a-a9c6-41fd6fba4737.png)
+
 
 ## Reference
 
