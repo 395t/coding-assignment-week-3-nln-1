@@ -3,7 +3,7 @@
 ## Summary
 
 ### Code Structure
-All of the code to reproduce our experiments can be found in `Nonlinear_Activation_and_Initalizations.ipynb`. This includes code to load any of the three datasets used in our experiments, network creation, and training functions and visualizations.
+All of the code to reproduce our experiments can be found in `Nonlinear_Activation_and_Initalizations.ipynb`. This includes code to load any of the three datasets used in our experiments, network creation, training function and visualization of test results.
 
 ### Commands to Reproduce Experiments
 To run locally, create a virtual environment and install the libraries in requirements.txt using the following commands. Alternately, you can use Google Colab to directly run the code.
