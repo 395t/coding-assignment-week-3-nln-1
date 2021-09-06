@@ -152,7 +152,7 @@ We train the model for 10-15 epochs depending on the convergence. The loss on th
 ![image_-4_across_activation](https://user-images.githubusercontent.com/35536646/132161932-8adf1cbc-28d8-44d0-a884-339e9a42be66.png)
 
 
-Softplus is the most stable across different learning rate, with loss contained in a reasonable range with all four rates. While maxout is the most unstable if appied larger learning rate(0.1, 0.01); both learning rates yield `nan` on training loss.
+Softplus is the most stable (in terms of training loss) across different learning rate, with loss contained in a reasonable range with all four rates. While maxout is the most unstable if appied larger learning rate(0.1, 0.01); both learning rates yield `nan` on training loss.
 
 ![softplus](https://user-images.githubusercontent.com/35536646/132161953-d85c284e-4b72-4bb4-be73-5cdf5e0e6cfc.png)
 ![maxout](https://user-images.githubusercontent.com/35536646/132161949-841f0cd5-ccc6-4e62-852f-ddd956ba4d94.png)
