@@ -143,18 +143,16 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 
 ![training_loss (lr=0.1](https://user-images.githubusercontent.com/35536646/132161741-b92905bf-8fe7-4530-a610-d17500c47683.png)
 ![training_loss (lr=0.01](https://user-images.githubusercontent.com/35536646/132161748-226797c1-1bc2-415b-8ba5-78eb6f8a959d.png)
-
-![training_loss (lr=0.1](https://user-images.githubusercontent.com/35536646/132161475-5aac29fa-d0db-42b5-b357-796a94ca1893.png) 
-![training_loss (lr=0.01](https://user-images.githubusercontent.com/35536646/132161480-ca70ad5c-2542-45b5-bba3-536a4f1c8a01.png)
-![training_loss (lr=0.001](https://user-images.githubusercontent.com/35536646/132161481-adebe842-5700-4c25-9e80-045f7612ae7a.png) 
-![training_loss (lr=0.0001](https://user-images.githubusercontent.com/35536646/132161483-cf4e23ca-850d-4c5f-b839-361291cdc211.png)
+![image_-3_across_activation](https://user-images.githubusercontent.com/35536646/132161928-92979b1b-b87f-4f01-a548-1ba03c6adefc.png)
+![image_-4_across_activation](https://user-images.githubusercontent.com/35536646/132161932-8adf1cbc-28d8-44d0-a884-339e9a42be66.png)
 
 
-Softplus is the most stable across different learning rate, with loss contained in a reasonable range with all four rates.
-![softplus_across_lr](https://user-images.githubusercontent.com/35536646/132151475-bf6a0ae7-29ee-4cdc-8b51-e8905d2cbaa7.png)
+Softplus is the most stable across different learning rate, with loss contained in a reasonable range with all four rates. While maxout is the most unstable if appied larger learning rate(0.1, 0.01); both learning rates yield `nan` on training loss.
 
-Maxout is the most unstable if appied larger learning rate(0.1, 0.01); both learning rates yield `nan` on training loss.
-![maxout_across_lr](https://user-images.githubusercontent.com/35536646/132151640-a5ef3aca-b0e4-4970-b0af-227f351dd16a.png)
+![softplus](https://user-images.githubusercontent.com/35536646/132161953-d85c284e-4b72-4bb4-be73-5cdf5e0e6cfc.png)
+![maxout](https://user-images.githubusercontent.com/35536646/132161949-841f0cd5-ccc6-4e62-852f-ddd956ba4d94.png)
+
+
 
 
 ### Maxout Without Dropout and With Varying Number of Units
