@@ -167,7 +167,16 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 |  Maxout | 10.00 | 10.00  | 62.83  | 62.33 |
 |  Softplus | 10.00 | 34.82  | 56.56  | 10.00  |
 |  Softsign | 21.14  | 47.15  |  65.39 | 51.01  |
- 
+
+##### Test Loss on CIFAR-10
+|   | 0.1 | 0.01 | 0.001 | 0.0001 |
+|---|---|---|---|---|
+|  ReLU      | 2.37 | 2.02  | 1.08  | 1.36  |
+|  LeakyReLU | nan |  1.79 | 1.07 | 1.33 |
+|  Tanh      | 63.13  | 3.87  |  1.03 | 1.10 |
+|  Maxout    | nan | nan  | 1.10  | 1.12 |
+|  Softplus  | 2.35  | 1.18  |  1.18 | 2.31  |
+|  Softsign  | 76.15 | 1.48  | 0.98  | 1.36  |
 
 ## Reference
 
