@@ -179,6 +179,7 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 |  Softsign  | 76.15 | 1.48  | 0.98  | 1.36  |
 
 ##### Training Loss Across Activation with Different Learning Rate
+(If you cannot find the training curve on the plot, meaning the loss for that specific activation is too high and cannot fit in the plot.)
 
 ![training_loss (lr=0.1)](https://user-images.githubusercontent.com/35536646/132151120-dee06127-c3b2-4973-a9ac-e48dabfe0be2.png)
 ![training_loss (lr=0.01)](https://user-images.githubusercontent.com/35536646/132151126-b8ea9329-ad8a-4888-b9c7-b02b58a912ca.png)
@@ -189,6 +190,7 @@ Softplus is the most stable across different learning rate, with loss contained 
 ![softplus_across_lr](https://user-images.githubusercontent.com/35536646/132151475-bf6a0ae7-29ee-4cdc-8b51-e8905d2cbaa7.png)
 
 Maxout is the most unstable if appied larger learning rate(0.1, 0.01); both learning rates yield `nan` on training loss.
+![maxout_across_lr](https://user-images.githubusercontent.com/35536646/132151640-a5ef3aca-b0e4-4970-b0af-227f351dd16a.png)
 
 
 ### Maxout Without Dropout and With Varying Number of Units!
