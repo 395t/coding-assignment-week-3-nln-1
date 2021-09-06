@@ -13,12 +13,14 @@ The summary can contain but is not limited to:
 - Ipython notebooks can be organized in `notebooks`.
 
 
+## Task
+Our Conv Net model is designed for image classification.
+
+
 ## Model Architecture
 
 
 
-## Task
-Our Conv Net model is designed for image classification.
 
 ## Datasets
 We evaluate our model on 3 publicly available main-stream image datasets:
