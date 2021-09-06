@@ -1,3 +1,4 @@
+
 # Non-linearities and Initializations 
 
 ## Summary
@@ -140,10 +141,12 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 (If you cannot find the training curve on the plot, meaning the loss for that specific activation is too high and cannot fit in the plot.)
 
 
-![training_loss (lr=0.1)](https://user-images.githubusercontent.com/35536646/132151120-dee06127-c3b2-4973-a9ac-e48dabfe0be2.png) ![training_loss (lr=0.01)](https://user-images.githubusercontent.com/35536646/132151126-b8ea9329-ad8a-4888-b9c7-b02b58a912ca.png)
 
-(![training_loss (lr=0.001)](https://user-images.githubusercontent.com/35536646/132151065-e3ea761e-d52b-4501-96df-7a67e43344bd.png) ![training_loss (lr=0.0001)](https://user-images.githubusercontent.com/35536646/132151112-ee045176-410c-4462-af24-4620b5d9bf12.png)
 
+
+![training_loss (lr=0.1](https://user-images.githubusercontent.com/35536646/132160913-7c3e8118-40ca-4a54-9fdd-de89cc605668.png) ![training_loss (lr=0.01)](https://user-images.githubusercontent.com/35536646/132161109-1711787d-8284-4e9e-97c4-d99364ca3073.png)
+
+(![training_loss (lr=0.001)](https://user-images.githubusercontent.com/35536646/132160893-9bf8e2da-f84a-4f50-ab05-ce1223b26790.png) ![training_loss (lr=0.0001)](https://user-images.githubusercontent.com/35536646/132161185-a5d205b2-8c79-479b-8206-93438fb47b83.png)
 
 Softplus is the most stable across different learning rate, with loss contained in a reasonable range with all four rates.
 ![softplus_across_lr](https://user-images.githubusercontent.com/35536646/132151475-bf6a0ae7-29ee-4cdc-8b51-e8905d2cbaa7.png)
