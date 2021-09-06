@@ -180,7 +180,7 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 ##### Training Loss Across Activation with Different Learning Rate
 (If you cannot find the training curve on the plot, meaning the loss for that specific activation is too high and cannot fit in the plot.)
 
-![training_loss (lr=0.1)](https://user-images.githubusercontent.com/35536646/132151120-dee06127-c3b2-4973-a9ac-e48dabfe0be2.png) ![training_loss (lr=0.01)](https://user-images.githubusercontent.com/35536646/132151126-b8ea9329-ad8a-4888-b9c7-b02b58a912ca.png)
+![training_loss (lr=0.1)](https://user-images.githubusercontent.com/35536646/132151120-dee06127-c3b2-4973-a9ac-e48dabfe0be2.png) ![training_loss (lr=0.01)](https://user-images.githubusercontent.com/35536646/132151126-b8ea9329-ad8a-4888-b9c7-b02b58a912ca.png | width=300)
 
 (![training_loss (lr=0.001)](https://user-images.githubusercontent.com/35536646/132151065-e3ea761e-d52b-4501-96df-7a67e43344bd.png) ![training_loss (lr=0.0001)](https://user-images.githubusercontent.com/35536646/132151112-ee045176-410c-4462-af24-4620b5d9bf12.png)
 
