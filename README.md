@@ -141,6 +141,8 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 (If you cannot find the training curve on the plot, meaning the loss for that specific activation is too high and cannot fit in the plot.)
 
 
+![training_loss (lr=0.1](https://user-images.githubusercontent.com/35536646/132161741-b92905bf-8fe7-4530-a610-d17500c47683.png)
+![training_loss (lr=0.01](https://user-images.githubusercontent.com/35536646/132161748-226797c1-1bc2-415b-8ba5-78eb6f8a959d.png)
 
 ![training_loss (lr=0.1](https://user-images.githubusercontent.com/35536646/132161475-5aac29fa-d0db-42b5-b357-796a94ca1893.png) 
 ![training_loss (lr=0.01](https://user-images.githubusercontent.com/35536646/132161480-ca70ad5c-2542-45b5-bba3-536a4f1c8a01.png)
