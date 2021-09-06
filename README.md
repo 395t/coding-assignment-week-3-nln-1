@@ -178,6 +178,12 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 |  Softplus  | 2.35  | 1.18  |  1.18 | 2.31  |
 |  Softsign  | 76.15 | 1.48  | 0.98  | 1.36  |
 
+### Maxout Without Dropout and With Varying Number of Units!
+
+[Maxout_Training](https://user-images.githubusercontent.com/34489261/132150030-27f69f4e-9c18-427f-a334-a2fab2b15b7f.png)
+[Maxout_Validation](https://user-images.githubusercontent.com/34489261/132150076-8c97cc8e-3d51-433f-ab07-116bef0b43a7.png)
+
+
 ## Reference
 
 We referred the following tutorial while designing our model architecture and coding the complete pipeline.
