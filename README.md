@@ -165,7 +165,7 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 |  LeakyReLU | 10.00 |  34.82 | 64.45 | 52.61  |
 |  Tanh | 19.40  | 24.90  |  65.32 | 60.84 |
 |  Maxout | 10.00 | 10.00  | 62.83  | 62.33 |
-|  Softplus | 10.00 | 34.82  | 56.56  | 10.00  |
+|  Softplus | 10.00 | 58.71  | 56.56  | 10.00  |
 |  Softsign | 21.14  | 47.15  |  65.39 | 51.01  |
 
 ##### Test Loss on CIFAR-10
