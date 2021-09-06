@@ -160,7 +160,7 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 |---|---|---|---|---|
 |  ReLU |  |   | 63.45  |   |
 |  LeakyReLU |  |   | 64.45 |   |
-|  Tanh |   |   |  65.32 |  |
+|  Tanh | 19.40  | 24.90  |  65.32 | 60.84 |
 |  Maxout |  |   | 62.83  |  |
 |  Softplus |  |   | 56.56  |   |
 |  Softsign |   |   |  65.39 |   |
