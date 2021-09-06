@@ -180,8 +180,8 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 
 ### Maxout Without Dropout and With Varying Number of Units!
 
-[Maxout_Training](https://user-images.githubusercontent.com/34489261/132150030-27f69f4e-9c18-427f-a334-a2fab2b15b7f.png)
-[Maxout_Validation](https://user-images.githubusercontent.com/34489261/132150076-8c97cc8e-3d51-433f-ab07-116bef0b43a7.png)
+![Maxout_Training](https://user-images.githubusercontent.com/34489261/132150030-27f69f4e-9c18-427f-a334-a2fab2b15b7f.png)
+![Maxout_Validation](https://user-images.githubusercontent.com/34489261/132150076-8c97cc8e-3d51-433f-ab07-116bef0b43a7.png)
 
 
 ## Reference
