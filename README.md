@@ -141,7 +141,7 @@ We train the model for 10-15 epochs depending on the convergence. The loss on th
 
 
 
-- Training Loss Across Activation with Different Learning Rate
+- **Training Loss Across Activation with Different Learning Rate**
   - Generally, models that perform better lead to better convergence and thus lower training loss. Softplus is the only exception here; it seems to be the most robust to learning rates only looking at the training curve, but it actually struggles in terms of testing accuracy. We think it might be stuck at a local minima so that the loss is relatively low but it is actually not learning anything. Other than that,  we observe similar trends as in the testing accuracy, with softsign and tanh being the most robust. Another thing worth noting is that models using maxout converge really fast when the learning rate is smaller (0.001 and 0.0001). It could be the flexibility of this activation so that it can quickly capture the input feature distribution. 
 (If you cannot find the training curve on the plot, meaning the loss for that specific activation is too high and cannot fit in the plot.)
 
