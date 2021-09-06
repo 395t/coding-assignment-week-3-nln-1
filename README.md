@@ -14,17 +14,24 @@ The summary can contain but is not limited to:
 
 ## Reference
 
-Any code that you borrow or other reference should be properly cited.
+We referred the following tutorial while designing our model architecture and coding the complete pipeline.
 
 https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
 
 ## Task
-Image Classification
+The Conv Net model is designed for image classification.
 
 ## Datasets
-1. CIFAR-10, 
-2. Tiny-ImageNet
-3. CalTech 101
+We evaluate our model on 3 publicly available main-stream image datasets:
+
+#### CIFAR-10
+This dataset consists of 60000 colour images of size 3x32x32 that are uniformly distributed across 10 classes such as airplane, horse, ship, etc. The dataset was downloaded from the following source: 
+- [Learning Multiple Layers of Features from Tiny Images](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf), Alex Krizhevsky, 2009.
+
+#### Tiny-Imagenet
+
+#### Caltech101
+This dataset consists of colour images of objects belonging to 101 classes. The images are unevenly distributed with 40 to 800 images corresponding to each class. Though, most classes have exactly 50 images. The size of the images also varies a lot around 300x200 pixels. We center crop the pictures (and introduce padding wherever necessary) to make them 256x256 before downsampling them to 64x64 for feasibility of training. 
 
 ## Base Model
 ConvNets?
