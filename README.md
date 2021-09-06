@@ -1,12 +1,11 @@
 
 # Non-linearities and Initializations 
 
-## Summary
 
-### Code Structure
+## Code Structure
 All of the code to reproduce our experiments can be found in `Nonlinear_Activation_and_Initalizations.ipynb`. This includes code to load any of the three datasets used in our experiments, network creation, training function and visualization of test results.
 
-### Commands to Reproduce Experiments
+## Commands to Reproduce Experiments
 To run locally, create a virtual environment and install the libraries in requirements.txt using the following commands. Alternately, you can use Google Colab to directly run the code.
 ```
 python3 -m venv my_venv
@@ -16,25 +15,6 @@ pip3 install jupyter notebook
 ```
 
 To run an experiment, edit the hyperparameters cell in the notebook to select desired experimental settings then simply run all cells in the notebook.
-
-
-### Discussion of Results - Findings and Conclusions
-
-We train the model for 10-15 epochs depending on the convergence. The loss on the validation set is used for model selection. The convergence plots show that most activations cause the model to converge 10 epochs while some activations like softplus converge between 10 to 15 epochs.
-
-1. **Variation across Activations**
-- Surprisingly, the tanh and softsign activation gets best performance across activations.
-- Softlpus is clearly struggling on tiny-imagenet, and obtaining lower performances in the other 2 datasets.
-- The performance of the model (with every activation) on tiny-imagenet is considerably poor compared to other datasets. This can be attributed to the higher variance in the input images across classes and the greater number of classes, which requires a deeper model like VGG16 to learn better. We couldn’t try that due to lack of time. We also experimented with a subset of 50 classes from the dataset but there was no significant improvement in the performance. 
-
-2. **Variation with Initializations**
-- As discussed by Saxe et al., initialization of the weight matrices with orthogonal matrices leads to better model performance when compared to initialization via random normalized values from a Gaussian distribution. These results are evident across 15 experiments where the different initialization schemes were implemented across the three datasets using relu, leaky relu, tanh, softplus, and soft sign activations. The learning rate (0.001) and number of epochs (10) were held constant to more directly compare initialization performance.
-- The results of our xavier initialization experiments were generally ineffective when paired with ReLU and Leaky ReLU and showed some signs of potential improvement with the tanh, softplus, and softsign activation functions specifically with the CalTech 101 dataset. On the CIFAR-10 dataset it performed worse than the default initialization for all activation functions. We hypothesize that the issue of the decreasing variance of the back propagated gradients discussed by Glorot et al. may not have been as evident in the CIFAR-10 dataset relative to the CalTech101 dataset where the improved accuracy with Xavier initialization seems to show the existence of this issue.
-
-3. **Varying Learning Rates**
-- **Testing Accuracy**
-  - As in the above table, softsign activation is clearly the most robust to varying learning rates. Maxout and softplus activations are the least robust, both getting results equivalent to random on two of the learning rates. However, maxout is actually pretty good when the learning rate is smaller, and softplus achieves the best accuracy (across activations) on 0.01 learning rate. ReLU, LeakyReLU and Tanh display medium robustness to different learning rates.
-
 
 
 ## Task
@@ -65,10 +45,7 @@ The size of the images also vary a lot around 300x200 pixels. We center crop the
 - Fei-Fei, Li, Rob Fergus, and Pietro Perona. "[One-shot learning of object categories.](http://vision.stanford.edu/documents/Fei-FeiFergusPerona2006.pdf)" IEEE transactions on pattern analysis and machine intelligence 28.4 (2006): 594-611.
 
 
-### Colab Link
-https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sharing
-
-## Results
+## Experiments
 
 We compare 6 non-linear activation functions in our model on image classification task - 
 
@@ -90,12 +67,17 @@ Finally, we also test the stability of our model to varying learning rate. We me
 
 We use 2 metrics of evaluation for comparing the model performance in any experimenyt - Test Accuracy and Test Loss.
 
-### Variation with Activation Function 
+## Results and Discussions
 
+We train the model for 10-15 epochs depending on the convergence. The loss on the validation set is used for model selection. The convergence plots show that most activations cause the model to converge 10 epochs while some activations like softplus converge between 10 to 15 epochs.
+
+### Variation with Activation Function 
+- Surprisingly, the tanh and softsign activation gets best performance across activations.
+- Softlpus is clearly struggling on tiny-imagenet, and obtaining lower performances in the other 2 datasets.
+- The performance of the model (with every activation) on tiny-imagenet is considerably poor compared to other datasets. This can be attributed to the higher variance in the input images across classes and the greater number of classes, which requires a deeper model like VGG16 to learn better. We couldn’t try that due to lack of time. We also experimented with a subset of 50 classes from the dataset but there was no significant improvement in the performance. 
 
 ![Cifar10_default_training_loss](https://user-images.githubusercontent.com/13873880/132155801-f1040647-7b71-4f6e-adf8-9d6093aad176.png)
 ![Cifar10_default_validation_loss](https://user-images.githubusercontent.com/13873880/132155803-056325a4-c101-4e46-9185-bb4c5d9bc6ea.png)
-
 
 
 ![Caltech_default_training_loss](https://user-images.githubusercontent.com/13873880/132142942-f9faa9ec-15aa-492c-8e76-cb11cbefc479.png)
@@ -113,10 +95,9 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 |  Softsign | **65.39**  | **13.66**  | 49.08  |
 
 
-
-
-
 ### Variation with Model Initialization
+- As discussed by Saxe et al., initialization of the weight matrices with orthogonal matrices leads to better model performance when compared to initialization via random normalized values from a Gaussian distribution. These results are evident across 15 experiments where the different initialization schemes were implemented across the three datasets using relu, leaky relu, tanh, softplus, and soft sign activations. The learning rate (0.001) and number of epochs (10) were held constant to more directly compare initialization performance.
+- The results of our xavier initialization experiments were generally ineffective when paired with ReLU and Leaky ReLU and showed some signs of potential improvement with the tanh, softplus, and softsign activation functions specifically with the CalTech 101 dataset. On the CIFAR-10 dataset it performed worse than the default initialization for all activation functions. We hypothesize that the issue of the decreasing variance of the back propagated gradients discussed by Glorot et al. may not have been as evident in the CIFAR-10 dataset relative to the CalTech101 dataset where the improved accuracy with Xavier initialization seems to show the existence of this issue.
 
 ##### Test Accuracy on CIFAR-10
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
@@ -139,6 +120,14 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 
 
 ### Stability of Model to Hyperparameters (Learning Rate)
+- **Testing Accuracy**
+  - As in the above table, softsign activation is clearly the most robust to varying learning rates. Maxout and softplus activations are the least robust, both getting results equivalent to random on two of the learning rates. However, maxout is actually pretty good when the learning rate is smaller, and softplus achieves the best accuracy (across activations) on 0.01 learning rate. ReLU, LeakyReLU and Tanh display medium robustness to different learning rates.
+
+
+
+
+
+
 
 ##### Test Accuracy on CIFAR-10
 |   | 0.1 | 0.01 | 0.001 | 0.0001 |
