@@ -159,13 +159,13 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 ##### Test Accuracy on CIFAR-10
 |   | 0.1 | 0.01 | 0.001 | 0.0001 |
 |---|---|---|---|---|
-|  ReLU |  |   | 63.45  |   |
-|  LeakyReLU |  |   | 64.45 |   |
+|  ReLU | 10.00 | 23.53  | 63.45  | 52.28  |
+|  LeakyReLU | 10.00 |  34.82 | 64.45 | 52.61  |
 |  Tanh | 19.40  | 24.90  |  65.32 | 60.84 |
-|  Maxout |  |   | 62.83  |  |
-|  Softplus |  |   | 56.56  |   |
-|  Softsign |   |   |  65.39 |   |
-
+|  Maxout | 10.00 | 10.00  | 62.83  | 62.33 |
+|  Softplus | 10.00 | 34.82  | 56.56  | 10.00  |
+|  Softsign | 21.14  | 47.15  |  65.39 | 51.01  |
+ 
 
 ## Reference
 
