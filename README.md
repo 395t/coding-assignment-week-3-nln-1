@@ -179,7 +179,7 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 |  Softsign  | 76.15 | 1.48  | 0.98  | 1.36  |
 
 ##### Training Loss Across Activation with Different Learning Rate
-![training_loss (lr=0.1)](https://user-images.githubusercontent.com/13873880/132147956-1c3a35bb-c540-4023-8f02-39804eaac730.png)
+![training_loss (lr=0.1)](https://drive.google.com/file/d/1EYYZWQ980FKtrT5gE3Nd7bKgj1zA-RrT/view?usp=sharing)
 ![training_loss (lr=0.01)](https://user-images.githubusercontent.com/13873880/132147961-c118aaed-72d2-4516-8ba1-15c7a3f09e21.png)
 
 
