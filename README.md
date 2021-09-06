@@ -12,37 +12,47 @@ The summary can contain but is not limited to:
 
 - Ipython notebooks can be organized in `notebooks`.
 
-## Reference
 
-We referred the following tutorial while designing our model architecture and coding the complete pipeline.
+## Model Architecture
 
-https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
+
 
 ## Task
-The Conv Net model is designed for image classification.
+Our Conv Net model is designed for image classification.
 
 ## Datasets
 We evaluate our model on 3 publicly available main-stream image datasets:
 
 #### CIFAR-10
-This dataset consists of 60000 colour images of size 3x32x32 that are uniformly distributed across 10 classes such as airplane, horse, ship, etc. The dataset was downloaded from the following source: 
+This dataset consists of 60000 colour images of size 3x32x32 that are uniformly distributed across 10 classes such as airplane, horse, ship, etc. We split this data into 40k/10k/10k for training, validation and testing respectively. The dataset was downloaded from the following source: 
 - [Learning Multiple Layers of Features from Tiny Images](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf), Alex Krizhevsky, 2009.
 
 #### Tiny-Imagenet
+This is a subset of the ImageNet dataset and contains 100000 colour images of 200 classes (500 per class) that are downsized to 64x64 from 256x256. The images are divided into the train, validate and test sets as 350/75/75 for each class. The dataset was introduced in
+- Le, Ya, and Xuan Yang. "Tiny imagenet visual recognition challenge." CS 231N 7.7 (2015): 3.
 
 #### Caltech101
-This dataset consists of colour images of objects belonging to 101 classes. The images are unevenly distributed with 40 to 800 images corresponding to each class. Though, most classes have exactly 50 images. The size of the images also varies a lot around 300x200 pixels. We center crop the pictures (and introduce padding wherever necessary) to make them 256x256 before downsampling them to 64x64 for feasibility of training. 
+This dataset consists of colour images of objects belonging to 101 classes. The images are unevenly distributed with 40 to 800 images corresponding to each class. Though, most classes have exactly 50 images. The total number of images are 8680 which are divided into train, validate and split sets in the ratio 0.7:0.15:0.15, stratified on the class label. 
+The size of the images also varies a lot around 300x200 pixels. We center crop the pictures (and introduce padding wherever necessary) to make them 256x256 before downsampling them to 64x64 for feasibility of training. The dataset was made available by
+- Fei-Fei, Li, Rob Fergus, and Pietro Perona. "One-shot learning of object categories." IEEE transactions on pattern analysis and machine intelligence 28.4 (2006): 594-611.
 
-## Base Model
-ConvNets?
-5 layers?
 
 ### Colab Link
 https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sharing
 
 ## Results
 
-### Activation
+We compare 5 non-linear activation functions in our model on image classification task - 
+
+- ReLU [(	Deep Sparse Rectifier Neural Networks, Glorot, Bordes, Bengio; 2011)](https://proceedings.mlr.press/v15/glorot11a/glorot11a.pdf)
+- LeakyReLU
+- Tanh
+- Maxout [(	Maxout Networks, Goodfellow, Warde-Farley, Mirza, Courville, Bengio; 2013)](https://arxiv.org/abs/1302.4389)
+- Softsign
+
+We 
+
+### Variation with Activation Function 
 
 
 
@@ -79,8 +89,9 @@ https://colab.research.google.com/drive/1xIgCBX1CQhPzeffXPcjsHHKSnNpusNjl?usp=sh
 
 
 
-### Initialization
-CIFAR-10 Accuracy
+### Variation with Model Initialization
+
+##### Test Accuracy on CIFAR-10
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) | 63.45  | 64.45  | 65.32  | 56.56 | 65.39 |
@@ -88,7 +99,7 @@ CIFAR-10 Accuracy
 |  orthogonal | 59.52  | 60.81  | 56.29  | 57.85  | 61.75  |
 |  xavier | 59.46  | 61.53  | 55.77  | 57.65  | 63.05  |
 
-CIFAR-10 Test Loss
+##### Test Loss on CIFAR-10
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) | 1.08  | 1.07  |   | 1.25 |  |
@@ -96,7 +107,7 @@ CIFAR-10 Test Loss
 |  orthogonal | 1.16  | 1.15  | 1.29  | 1.21  | 1.11  |
 |  xavier | 1.18  | 1.11  | 1.29  | 1.24  | 1.07  |
 
-Tiny Imagenet Accuracy
+##### Test Accuracy on Tiny-Imagenet
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) | 12.15  | 9.87  | 11.21  |  |  |
@@ -104,7 +115,7 @@ Tiny Imagenet Accuracy
 |  orthogonal | 10.66  | 10.95  | 10.97  | 0.56  | 15.56  |
 |  xavier |   |   |   |   |   |
 
-Tiny Imagenet Test Loss
+##### Test Loss on Tiny-Imagenet
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) | 4.11  | 4.35  | 4.28  |  |  |
@@ -112,7 +123,7 @@ Tiny Imagenet Test Loss
 |  orthogonal | 4.20  | 4.15  | 4.37  | 5.30  | 3.97  |
 |  xavier |   |   |   |   |   |
 
-Caltech101 Accuracy
+##### Test Accuracy on Caltech101
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) | 46.62  | 44.24  | 53.15  | 38.79  | 49.08  |
@@ -120,7 +131,7 @@ Caltech101 Accuracy
 |  orthogonal | 41.55  | 42.86  | 52.30  | 39.09  | 51.69  |
 |  xavier |  42.17 |  42.86 | 53.99  | 41.24  | 55.38  |
 
-Caltech101 Test Loss
+##### Test Loss on Caltech101
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) | 2.40  | 2.50  | 2.17  | 2.74 | 2.23 |
@@ -137,3 +148,10 @@ Caltech101 Test Loss
 |  Maxout |  |   | 62.83  |  |
 |  Softplus |  |   | 56.56  |   |
 |  Softsign |   |   |  65.39 |   |
+
+
+## Reference
+
+We referred the following tutorial while designing our model architecture and coding the complete pipeline.
+
+https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
