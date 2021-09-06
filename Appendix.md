@@ -23,7 +23,7 @@
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) | 12.15  | 9.87  | 11.21  |  |  |
-|  normalized |   |   |   |   |   |
+|  normalized | 0.51  | 3.53  | 3.05  | 0.54  | 9.89  |
 |  orthogonal | 10.66  | 10.95  | 10.97  | 0.56  | 15.56  |
 |  xavier |   |   |   |   |   |
 
@@ -32,7 +32,7 @@
 |   | ReLU | Leaky ReLu | tanh | softplus | softsign |
 |---|---|---|---|---|---|
 | random (default) | 4.11  | 4.35  | 4.28  |  |  |
-|  normalized |   |   |   |   |   |
+|  normalized | 5.30  | 4.88  | 5.21  | 5.30  | 4.44  |
 |  orthogonal | 4.20  | 4.15  | 4.37  | 5.30  | 3.97  |
 |  xavier |   |   |   |   |   |
 
