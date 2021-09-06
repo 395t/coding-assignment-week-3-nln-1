@@ -20,6 +20,20 @@ To run an experiment, edit the hyperparameters cell in the notebook to select de
 
 ### Discussion of Results - Findings and conclusions
 
+We train the model for 10-15 epochs depending on the convergence. The loss on the validation set is used for model selection. The convergence plots show that most activations cause the model to converge 10 epochs while some activations like softplus converge between 10 to 15 epochs.
+
+1. **Variation across Activations**
+..- Surprisingly, the tanh and softsign activation gets best performance across activations
+..- Softlpus is clearly struggling on tiny-imagenet, and obtaining lower performances in the other 2 datasets
+..- The performance of the model (with every activation) on tiny-imagenet is considerably poor compared to other datasets. This can be attributed to the higher variance in the input images across classes and the greater number of classes, which requires a deeper model like VGG16 to learn better. We couldn’t try that due to lack of time. We also experimented with a subset of 50 classes from the dataset but there was no significant improvement in the performance. 
+
+2. **Variation with Initializations**
+..As discussed by Saxe et al., initialization of the weight matrices with orthogonal matrices leads to better model performance when compared to initialization via random normalized values from a Gaussian distribution. These results are evident across 15 experiments where the different initialization schemes were implemented across the three datasets using relu, leaky relu, tanh, softplus, and soft sign activations. The learning rate (0.001) and number of epochs (10) were held constant to more directly compare initialization performance.
+..The results of our xavier initialization experiments were generally ineffective when paired with ReLU and Leaky ReLU and showed some signs of potential improvement with the tanh, softplus, and softsign activation functions specifically with the CalTech 101 dataset. On the CIFAR-10 dataset it performed worse than the default initialization for all activation functions. We hypothesize that the issue of the decreasing variance of the back propagated gradients discussed by Glorot et al. may not have been as evident in the CIFAR-10 dataset relative to the CalTech101 dataset where the improved accuracy with Xavier initialization seems to show the existence of this issue.
+3. **Varying Learning Rates**
+**Testing Accuracy**
+As in the above table, softsign activation is clearly the most robust to varying learning rates. Maxout and softplus activations are the least robust, both getting results equivalent to random on two of the learning rates. However, maxout is actually pretty good when the learning rate is smaller, and softplus achieves the best accuracy (across activations) on 0.01 learning rate. ReLU, LeakyReLU and Tanh display medium robustness to different learning rates.
+
 
 
 ## Task
