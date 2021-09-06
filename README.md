@@ -120,7 +120,7 @@ We train the model for 10-15 epochs depending on the convergence. The loss on th
 
 
 ### Stability of Model to Hyperparameters (Learning Rate)
-We modify the learning rate to [0.1, 0.01, 0.001 (default), 0.0001] to see how models perform. If one model's performance is more invariant to different learning rates, it means the model is easier to train and also require less tuning. We compare results accross different activation functions.
+We measure model performances with learning rates of [0.1, 0.01, 0.001 (default), 0.0001]. If one model's performance is more invariant to different learning rates, it means the model is easier to train and also require less tuning. We compare results accross different activation functions.
 
 - **Testing Accuracy**
   - As in the table below, softsign activation is clearly the most robust to varying learning rates. Maxout and softplus activations are the least stable, both getting results equivalent to random on two of the learning rates. However, maxout is actually pretty good when the learning rate is smaller, and softplus achieves the best accuracy (across activations) on 0.01 learning rate. ReLU, LeakyReLU and Tanh display medium stability with different value of learning rates.
