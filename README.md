@@ -69,7 +69,7 @@ We use 2 metrics of evaluation for comparing the model performance in any experi
 
 ## Results and Discussions
 
-We train the model for 10-15 epochs depending on the convergence. The loss on the validation set is used for model selection. The convergence plots show that most activations cause the model to converge 10 epochs while some activations like softplus converge between 10 to 15 epochs.
+We train the model for 10-15 epochs depending on the convergence. The loss on the validation set is used for model selection. The convergence plots show that most activations cause the model to converge between 10 to 15 epochs while some activations like maxout converge before 10 epochs.
 
 ![Cifar10_default_training_loss](https://user-images.githubusercontent.com/13873880/132155801-f1040647-7b71-4f6e-adf8-9d6093aad176.png)
 ![Cifar10_default_validation_loss](https://user-images.githubusercontent.com/13873880/132155803-056325a4-c101-4e46-9185-bb4c5d9bc6ea.png)
