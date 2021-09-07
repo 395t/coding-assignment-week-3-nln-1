@@ -65,16 +65,11 @@ We also evaluate the performance of our model with different initialization stra
 
 Finally, we also test the stability of our model to varying learning rate. We measure model performance with 4 values of learning rate - 0.1, 0.01, 0.0001, 0.00001.
 
-We use 2 metrics of evaluation for comparing the model performance in any experimenyt - Test Accuracy and Test Loss.
+We use 2 metrics of evaluation for comparing the model performance in any experiment - Test Accuracy and Test Loss (the test loss results are in `appendix.md`).
 
 ## Results and Discussions
 
 We train the model for 10-15 epochs depending on the convergence. The loss on the validation set is used for model selection. The convergence plots show that most activations cause the model to converge 10 epochs while some activations like softplus converge between 10 to 15 epochs.
-
-### Variation with Activation Function 
-- Surprisingly, the tanh and softsign activation gets best performance across activations.
-- Softlpus is clearly struggling on tiny-imagenet, and obtaining lower performances in the other 2 datasets.
-- The performance of the model (with every activation) on tiny-imagenet is considerably poor compared to other datasets. This can be attributed to the higher variance in the input images across classes and the greater number of classes, which requires a deeper model like VGG16 to learn better. We couldn’t try that due to lack of time. We also experimented with a subset of 50 classes from the dataset but there was no significant improvement in the performance. 
 
 ![Cifar10_default_training_loss](https://user-images.githubusercontent.com/13873880/132155801-f1040647-7b71-4f6e-adf8-9d6093aad176.png)
 ![Cifar10_default_validation_loss](https://user-images.githubusercontent.com/13873880/132155803-056325a4-c101-4e46-9185-bb4c5d9bc6ea.png)
@@ -82,6 +77,12 @@ We train the model for 10-15 epochs depending on the convergence. The loss on th
 
 ![Caltech_default_training_loss](https://user-images.githubusercontent.com/13873880/132142942-f9faa9ec-15aa-492c-8e76-cb11cbefc479.png)
 ![Caltech_default_validation_loss](https://user-images.githubusercontent.com/13873880/132142943-1b1ec9a6-965e-4441-b097-343bf766e4b5.png)
+
+### Variation with Activation Function 
+- Surprisingly, the tanh and softsign activation gets best performance across activations.
+- Softlpus is clearly struggling on tiny-imagenet, and obtaining lower performances in the other 2 datasets.
+- The performance of the model (with every activation) on tiny-imagenet is considerably poor compared to other datasets. This can be attributed to the higher variance in the input images across classes and the greater number of classes, which requires a deeper model like VGG16 to learn better. We couldn’t try that due to lack of time. We also experimented with a subset of 50 classes from the dataset but there was no significant improvement in the performance. 
+
 
 
 ##### Test Accuracy
